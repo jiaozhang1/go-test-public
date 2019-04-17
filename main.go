@@ -7,7 +7,7 @@ import (
 )
 
 func sayHelloName(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("hello from golang http server")
+	fmt.Println("hello from golang http serversdfsdf")
 	w.Write([]byte("ok"))
 }
 

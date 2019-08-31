@@ -1,5 +1,6 @@
-FROM alpine:3.8
-
-EXPOSE 9898
-
-CMD ["sample"]
+FROM index.alauda.cn/alaudaorg/qaimages:helloworld
+LABEL Version="1.1.90790798"
+ENV VERSION=1.0.3
+COPY a.sh /
+RUN chmod +x /a.sh
+CMD echo $VERSION && sleep 60

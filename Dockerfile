@@ -4,3 +4,4 @@ ENV VERSION=1.0.3
 COPY a.sh /
 RUN chmod +x /a.sh
 CMD echo $VERSION && sleep 60
+EXPOSE 8080
